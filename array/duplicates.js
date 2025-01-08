@@ -27,5 +27,6 @@ var containsDuplicate = function(nums) {
 
 // Option 3 - Compare set length
 var containsDuplicate = function(nums) {
-    
+    const numSet = new Set(nums);
+    return numSet.size < nums.length;
 }
