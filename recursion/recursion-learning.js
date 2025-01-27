@@ -27,4 +27,23 @@ function sumOfDigits2(number) {
 // and on and on
 
 
-console.log(`Output: ${sumOfDigits2(544223)}`);
+console.log(`Output: ${sumOfDigits2(5442231)}`);
+
+function power(a, b) {
+    if (b === 0) return 1;
+
+    return a * power(a, b - 1);
+}
+
+console.log(power(2, 3));
+
+
+function isPalindrome(str) {
+    // Base case
+    if (str.length <= 1) return true;
+  
+    // Recursive case
+    if (str[0] !== str[str.length - 1]) return false;
+  
+    return isPalindrome(str.slice(1, -1));
+  }
